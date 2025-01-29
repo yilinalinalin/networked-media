@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+  }
+
+.homepage_content {
+    display: inline-flex;
+    padding: 240px 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.page_content {
+    display: inline-flex;
+    padding: 180px 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    float: left;
+    width: 500;
+}
+
+.reference {
+    width: 800;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 200 60;
+    gap: 16px;
+}
+
+.start_button {
+    display: flex;
+    padding: 12px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(3px);
+}
+
+.arrow-back {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(3px);
+}
+
+.arrow-forward {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 45px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: blur(3px);
+}
+
+.image {
+    float: right;
+    width: 700;
+    overflow: hidden;
+    display: block;
+    height: auto;
+}
+
+#snow {
+    margin-left: 10px;
+}
+
+.button_sets {
+    display: flex;
+    padding: 8px;
+    gap: 16px;
+}

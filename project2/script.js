@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     //Color change
     function blendColors(startColor, endColor, blendFactor, transparency = 0.2) {
         let blendedColor = [];
-
+    
         for (let i = 0; i < 3; i++) {
-            let blendedValue = Math.round(startColor[i] + blendFactor * (endColor[i] - startColor[i]));
-            blendedColor.push(blendedValue);
+            blendedColor.push(Math.round(startColor[i] + blendFactor * (endColor[i] - startColor[i])));
         }
-
+    
         return `rgba(${blendedColor[0]}, ${blendedColor[1]}, ${blendedColor[2]}, ${transparency})`;
     }
+    
 
     const yellow = [255, 255, 0];
     const blue = [0, 0, 255];

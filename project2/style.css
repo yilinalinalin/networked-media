@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-shadow: rgb(75, 75, 75) 1px 0 10px;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+#rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+#timer {
+    position: relative;
+    font-size: 96px;
+    font-weight: bold;
+    z-index: 10;
+}
+#explain {
+    font-size: 36px;
+    font-weight: semibold;
+    z-index: 10;
+}

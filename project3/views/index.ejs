@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Project 3 | Submit Form</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <div class="nav-bar">
+            <div id="arrow-back">
+                <a href="/home">
+                    <img src="arrow_back.png" alt="Back Arrow">
+                </a>
+            </div>
+            <p class="nav-text">Back to Home Page</p>
+        </div>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <div id="upload-content">
+                <label for="userName">User Name:</label>
+                <p class="subtitle">Create a username for yourself (max 50 characters)</p>
+                <textarea type="text" name="userName" placeholder="Enter your name" required></textarea>
+            </div>
+            <div id="upload-content">
+                <label for="textMessage">Text Area:</label>
+                <p class="subtitle">Max 150 characters</p>
+                <textarea type="text" name="textMessage" placeholder="Type here"></textarea>
+            </div>
+            <div id="upload-content">
+                <label for="userName">Upload Images</label>
+                <p class="subtitle">Accepted format: .jpg</p>
+                <label for="theimage" class="custom-file-btn">Choose File</label>
+                <input type="file" id="theimage" name="theimage" class="file-input" accept=".jpg">
+            </div>
+            <div id="submit-button">
+                <input type="submit" name="sbtn" value="Publish">
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>© 2025 Yilin Wang. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

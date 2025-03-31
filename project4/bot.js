@@ -8,7 +8,7 @@ const masto = m.createRestAPIClient({
 
 async function getRandomPoem() {
     try {
-        let response = await fetch("https://poetrydb.org/author/Shakespeare")
+        let response = await fetch("https://poetrydb.org/random")
         let jsonResponse = await response.json()
 
         if (jsonResponse.length > 0) {

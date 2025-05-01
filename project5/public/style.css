@@ -1,0 +1,428 @@
+body {
+    background: #0E0E0E;
+    color: white;
+    font-family: 'Instagram Sans', sans-serif;
+}
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: rgb(193, 193, 193);
+    margin: 0 0 16px;
+}
+
+#upload-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+#image-button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#upload-content label {
+    margin-bottom: 4px;
+}
+
+.input-container {
+    margin: 80px;
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    font-size: 16px;
+    background-color: #0E0E0E;
+    color: rgb(236, 236, 236);
+    border: 1px solid rgb(98, 98, 98);
+    padding: 10px;
+    border-radius: 8px;
+    resize: none;
+}
+
+#submit-button {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.home-button {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+input[type="submit"], #add-proposal {
+    font-family: 'Instagram Sans', sans-serif;
+    width: 130px;
+    font-size: 16pt;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #F58626;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+#course-info {
+    font-family: 'Instagram Sans', sans-serif;
+    width: 130px;
+    font-size: 16pt;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: #F58626;
+    background-color: white;
+    border: none;
+    text-align: center;
+}
+
+.file-input {
+    display: none;
+}
+
+.custom-file-btn {
+    background-color: #341800;
+    color: white;
+    width: 300px;
+    padding: 10px 20px;
+    font-family: 'Instagram Sans', sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-file-btn:hover {
+    background-color: #373737;
+}
+
+#arrow-back img {
+    width: 30px;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-text {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 60px;
+    margin-top: 0px;
+}
+
+.header {
+    font-size: 70px;
+    margin: 20px 0 40px;
+    font-weight: 800;
+}
+
+.course {
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 12px;
+}
+
+#background {
+    height: 70%;
+    background-image: url('bg2.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.username {
+    margin-bottom: 8px;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgb(161, 161, 161);
+}
+
+.headline {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.text {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+#header {
+    padding-top: 160px;
+    margin-left: 80px;
+    width: 70%;
+}
+
+.messages-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 40px auto 0;
+}
+
+.post-item {
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer {
+    font-size: 12px;
+    margin: 80px;
+    font-weight: 400;
+    height: 30px;
+    border-top: 1px solid white;
+}
+
+.info-header {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 100px 20px;
+}
+
+.info-body {
+    margin: 0 100px 100px;
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+.image-wrapper img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    
+  }
+
+.zoom-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 169, 30, 0.8);
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+/* PDF Card style */
+  .pdf-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3F3F3F;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .pdf-icon {
+    width: 40px;
+    height: auto;
+  }
+  
+  .view-btn {
+    background-color: #F58626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .view-btn:hover {
+    background-color: #933400;
+  }
+
+/* Like button style */
+.like-form {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 0;
+}
+
+.like-btn {
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    color: #F58626;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+
+.like-icon {
+    font-size: 16px;
+    color: #0E0E0E;
+}
+
+.like-count {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* Modal Styles */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#modal img {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+}
+
+#modal .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* related course */
+
+body {
+    background-color: #000;
+  }
+  
+  .ag-format-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .related-course {
+    background-color: #111111;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 80px 80px 0 0;
+    border-radius: 20px;
+  }
+  
+  .related-course h1 {
+    margin: 12px 0 6px 12px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .ag-courses_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .ag-courses_item {
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+  
+  .ag-courses-item_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #3b3b3b;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .ag-courses-item_link:hover .ag-courses-item_bg {
+    transform: scale(10);
+  }
+  
+  .ag-courses-item_title {
+    min-height: 30px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .ag-courses-item_date-box {
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .ag-courses-item_date {
+    font-weight: bold;
+    color: #f9b234;
+    transition: color 0.5s ease;
+  }
+  
+  .ag-courses-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #8c5900;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  

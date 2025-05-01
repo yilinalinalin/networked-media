@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Final Project | Home</title>
+    <link href="style.css" rel="stylesheet">
+    <%- include('image-expand.ejs') %>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+
+<body>
+    <div id="background">
+        <div id="header">
+            <p class="course">ITPG-GT 2379 004 Bioprinting & Biofabrication for Artists & Design</p>
+            <p class="header">Bio-Material-Lab: An online community for Research Findings Sharing</p>
+            <div class="home-button">
+                <a href="/">
+                    <div id="add-proposal">Add a Post</div>
+                </a>
+                <a href="/info">
+                    <div id="course-info">Course Info</div>
+                </a>
+            </div>
+        </div>
+        <div class="related-course">
+            <h1>Related Course</h1>
+            <%- include('class.ejs') %>
+        </div>
+    </div>
+    <div class="messages-container">
+        <% posts.forEach((post)=> { %>
+            <div class="post-item">
+                <!-- View text -->
+                <p class="username">
+                    <%= post.userName %>
+                </p>
+                <p class="headline">
+                    <%= post.Headline %>
+                </p>
+                <p class="text">
+                    <%= post.text %>
+                </p>
+                <!-- View image and expand -->
+                <% if (post.image1 || post.image2) { %>
+                    <div class="image-row">
+                        <% if (post.image1) { %>
+                            <div class="image-wrapper">
+                                <img src="<%= post.image1 %>" alt="Image 1" onclick="openModal(this)">
+                                <button class="zoom-btn" onclick="openModal(this.previousElementSibling)">🔍</button>
+                            </div>
+                            <% } %>
+                                <% if (post.image2) { %>
+                                    <div class="image-wrapper">
+                                        <img src="<%= post.image2 %>" alt="Image 2" onclick="openModal(this)">
+                                        <button class="zoom-btn"
+                                            onclick="openModal(this.previousElementSibling)">🔍</button>
+                                    </div>
+                                    <% } %>
+                    </div>
+                    <% } %>
+                        <!-- View PDF -->
+                        <% if (post.pdf) { %>
+                            <div class="pdf-card">
+                                <img src="pdf.png" alt="PDF Icon" class="pdf-icon">
+                                <a href="<%= post.pdf %>" target="_blank">
+                                    <button class="view-btn">View PDF</button>
+                                </a>
+                            </div>
+                            <% } %>
+                                <!-- Like a post, referenced class 20 demo -->
+                                <form method="POST" action="/like" class="like-form">
+                                    <button type="submit" class="like-btn">
+                                        <span class="like-icon">👀 Want to know more 👂</span>
+                                        <span class="like-count">
+                                            <%= post.likes %>
+                                        </span>
+                                    </button>
+
+                                    <input type="hidden" name="postId" value="<%=post._id%>">
+                                </form>
+            </div>
+            <% }); %>
+    </div>
+    <!-- expand image -->
+    <div id="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img id="modal-img" src="" alt="Zoomed Image">
+    </div>
+    <div class="footer">
+        <p>© 2025 Yilin Wang. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

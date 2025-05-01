@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Final Project | Submit Form</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <div class="nav-bar">
+            <div id="arrow-back">
+                <a href="/home">
+                    <img src="arrow_back.png" alt="Back Arrow">
+                </a>
+            </div>
+            <p class="nav-text">Back to Home Page</p>
+        </div>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <div id="upload-content">
+                <label for="userName">Username</label>
+                <p class="subtitle">Create a username for yourself</p>
+                <textarea type="text" name="userName" placeholder="Enter a username" required></textarea>
+            </div>
+            <div id="upload-content">
+                <label for="Headline">Headline</label>
+                <p class="subtitle">Create a headline for your post (max 50 characters)</p>
+                <textarea type="text" name="Headline" placeholder="Enter a headline" required></textarea>
+            </div>
+            <div id="upload-content">
+                <label for="textMessage">Body:</label>
+                <p class="subtitle">Max 150 characters</p>
+                <textarea type="text" name="textMessage" placeholder="Type here"></textarea>
+            </div>
+            <div id="upload-content">
+                <label for="userName">Upload Images</label>
+                <p class="subtitle">Accepted formats: .jpg, .png, .gif, .jpeg</p>
+                
+                <div id="image-button">
+                    <!-- First Image Upload -->
+                    <label for="image1" class="custom-file-btn">Choose Image 1</label>
+                    <input type="file" id="image1" name="image1" class="file-input" accept=".jpg, .jpeg, .png, .gif">
+                
+                    <!-- Second Image Upload -->
+                    <label for="image2" class="custom-file-btn">Choose Image 2</label>
+                    <input type="file" id="image2" name="image2" class="file-input" accept=".jpg, .jpeg, .png, .gif">
+                </div>
+                <p class="subtitle">Accepted format: .pdf</p>
+                
+                <!-- PDF File Upload -->
+                <label for="pdf" class="custom-file-btn">Choose PDF</label>
+                <input type="file" id="pdf" name="pdf" class="file-input" accept=".pdf">
+            </div>
+            <div id="submit-button">
+                <input type="submit" name="sbtn" value="Publish">
+            </div>
+
+        </form>
+    </div>
+    <div class="footer">
+        <p>© 2025 Yilin Wang. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
